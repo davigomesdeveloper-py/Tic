@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Outfit:wght@100..900&display=swap');
 
 *{
     margin: 0;
@@ -9,8 +10,53 @@
 
 header{
     display: flex;
+    width: 100%;
+    padding: 10px 2%;
     justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 3px  solid #add401af;
+    box-shadow: 1px 2px 6px #add401c2;
+
+    ul{
+        display: flex;
+        gap: 24px;
+        list-style-type: none;
+        background-color: rgba(128, 128, 128, 0.644);
+        padding: 10px 20px;
+        border-radius: 14px;
+
+       a{
+        color: #aed401;
+        text-decoration: none;
+        font-weight: bolder;
+        font-family:"Outfit",sans-serif;
+        }
+    }
 }
-nav{
+
+section{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
     
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.inicio{
+    height: 100vh;
+    justify-content: center ;
+    align-items: center;
+
+    h1{
+        
+        width: 50vw;
+    }
+    
+    
+    p{
+        text-align: justify;
+    }
 }
