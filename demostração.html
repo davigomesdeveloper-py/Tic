@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <img src="imagens/tic.logo.jpg" alt="Logotipo da empresa Tic" />
+      <img id="logoTic"src="imagens/tic.logo.jpg" alt="Logotipo da empresa Tic" />
       <nav>
         <ul>
           <li><a href="#">início</a></li>
@@ -20,10 +20,13 @@
 
     <main>
       <!--início-->
-      <section class="inicio">
-        
-        <article>
-          <div>
+      <div class="video-background">
+        <video autoplay muted loop playsinline>
+          <source src="imagens/potinhos.mp4" type="video/mp4">
+        </video>
+      </div>
+        <article class="inicio">
+          <div class="conteudoPrincipal">
             <h1>SUA MARCA TEM SIDO LEMBRADA?</h1>
             <p>
               Marcas fortes não crescem por acaso. Elas têm posicionamento,
@@ -32,9 +35,9 @@
               comece a ocupar um espaço próprio no mercado.
             </p>
           </div>
-          <button>
-            iniciar minha estratégia
-            <img src="imagens/seta_cima.jpg" alt="seta para cima" />
+          <button class="divBotao">
+            
+            <p>iniciar minha estratégia</p>
           </button>
           <img src="#" alt="" />
         </article>
@@ -62,7 +65,6 @@
           </p>
         </article>
 
-      </section>
       <!--Serviços-->
       <section class="servicos">
         <h1>Serviços</h1>
