@@ -11,22 +11,22 @@
       <img id="logoTic"src="imagens/tic.logo.jpg" alt="Logotipo da empresa Tic" />
       <nav>
         <ul>
-          <li><a href="#">início</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">contatos</a></li>
+          <li><a href="#inicio">início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contatos">contatos</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main id="inicio">
+
+        <div class="background-dots">
+          <canvas id="dotsCanvas"></canvas>
+        </div>
+
       <!--início-->
-      <div class="video-background">
-        <video autoplay muted loop playsinline>
-          <source src="imagens/potinhos.mp4" type="video/mp4">
-        </video>
-      </div>
-        <article class="inicio">
-          <div class="conteudoPrincipal">
+        <article class="inicio" >
+          <div class="conteudoPrincipal" >
             <h1>SUA MARCA TEM SIDO LEMBRADA?</h1>
             <p>
               Marcas fortes não crescem por acaso. Elas têm posicionamento,
@@ -66,25 +66,39 @@
         </article>
 
       <!--Serviços-->
-      <section class="servicos">
+      <section class="servicos" id="servicos">
         <h1>Serviços</h1>
         <div class="divCards">
           <div class="card">
-            <img src="imagens/social_midia.jpg" alt="marca do twiter">
-            <h2>Social Midia</h2>
+            
+            <h2><img src="imagens/social_midia.jpg" alt="marca do twiter"> Social Midia</h2>
             <p>
               Desenvolvemos estratégias de marketing personalizadas para posicionar sua marca, atrair o público certo e gerar resultados. Unimos análise, criatividade e planejamento para transformar objetivos em ações que impulsionam o crescimento do seu negócio.
             </p>
           </div>
           <div class="card">
-            <img src="imagens/camera.jpg" alt="câmera">
-            <h2>Fotografia</h2>
+            
+            <h2><img src="imagens/camera.jpg" alt="câmera"> Fotografia</h2>
             <p>
               Criamos fotografias e vídeos que traduzem a essência da sua marca e conectam sua empresa ao público. Do conceito à produção, entregamos conteúdos profissionais, criativos e estratégicos para destacar sua presença e fortalecer sua comunicação.
             </p>
           </div>
         </div>
       </section>
+      <article id="contatos">
+        <h1>
+          contatos:
+        </h1>
+        
+          <div class="links">
+            <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">whatsapp<img id="imgWhat" src="imagens/whatsapp_incon.jpg" alt=""></a>
+          </div>
+          <div class="links" id="linkinsta">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">instagram<img id="imgInsta" src="imagens/intagram_icon.jpg" alt=""></a>
+          </div>
+        
+      </article>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
